@@ -27,3 +27,16 @@ Output:
 Notes:
 1. S1 and S0 are the select lines.
 2. Y is the output determined by the selected input (I0, I1, I2, or I3).
+
+## Comparision Table
+| **Parameters** | **Transmission_Gate** | **Domino** |
+|--------|--------|----------------|
+|   Rise time (ns)  |   5.32    | 3.58            |
+|   Fall time (ns)   |   1.78  | 1.14           |
+|   Avg Delay(ns)   |   1.53   | 1.94         |
+|   Avg Power (uW)   |   8.95   | 60.38     |
+|   Area (no_of_Mosfets)   |   16    |    20         |
+## Conclusion
+Based on the comparison table, the Domino logic design exhibits faster rise and fall times, making it suitable for high-speed applications. However, it consumes significantly more power (60.38 µW) compared to the Transmission Gate logic, which is more power-efficient at 8.95 µW. Additionally, the Transmission Gate requires fewer MOSFETs (16 vs. 20), resulting in a smaller area footprint.
+
+ *Recommendation: Choose Transmission Gate for low-power, area-constrained designs and Domino logic for speed-critical applications.
